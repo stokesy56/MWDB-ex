@@ -45,9 +45,9 @@ Query: SELECT CompanyName, ContactName, Phone, City, Fax FROM Customers
         WHERE Fax IS NULL
 
 Response:
-
-| Antonio Moreno Taquería | Antonio Moreno       | (5) 555-3932   | México D.F.    | NULL |
+| CompanyName             | ContactName          | Phone          | City           | Fax  |
 |-------------------------|----------------------|----------------|----------------|------|
+| Antonio Moreno Taquería | Antonio Moreno       | (5) 555-3932   | México D.F.    | NULL |
 | B's Beverages           | Victoria Ashworth    | (171) 555-1212 | London         | NULL |
 | Chop-suey Chinese       | Yang Wang            | 0452-076545    | Bern           | NULL |
 | Comércio Mineiro        | Pedro Afonso         | (11) 555-7647  | Sao Paulo      | NULL |
@@ -69,7 +69,6 @@ Response:
 | The Big Cheese          | Liz Nixon            | (503) 555-3612 | Portland       | NULL |
 | Tortuga Restaurante     | Miguel Angel Paolino | (5) 555-2933   | México D.F.    | NULL |
 | Wellington Importadora  | Paula Parente        | (14) 555-8122  | Resende        | NULL |
-
 ### Q6 - Ahh there you are! My prize :star::star:SPARTANTS:star::star:! MY MARES AND MY STALLIONS! We need to re-target all of our Customers is Paris! Get me information on these clients.
 
 Query:
