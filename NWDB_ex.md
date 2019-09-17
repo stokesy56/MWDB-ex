@@ -44,30 +44,30 @@ Response: 6 entries
 Query: SELECT CompanyName, ContactName, Phone, City, Fax FROM Customers
         WHERE Fax IS NULL
 
-
 Response:
-|CompanyName |	ContactName |	Phone	City	|Fax|
-|Antonio Moreno Taquería |	Antonio Moreno |	(5) 555-3932 |	México D.F. |	NULL|
-|B's Beverages |	Victoria Ashworth	| (171) 555-1212 |	London |	NULL|
-|Chop-suey Chinese |	Yang Wang |	0452-076545 |	Bern |	NULL|
-|Comércio Mineiro |	Pedro Afonso |	(11) 555-7647 |	Sao Paulo |	NULL|
-|Familia Arquibaldo |	Aria Cruz |	(11) 555-9857 |	Sao Paulo |	NULL|
-|Folk och fä HB |	Maria Larsson |	0695-34 67 21 |	Bräcke |	NULL|
-|Godos Cocina Típica |	José Pedro Freyre |	(95) 555 82 82 |	Sevilla |	NULL|
-|Great Lakes Food Market |	Howard Snyder |	(503) 555-7555 |	Eugene |	NULL|
-|Island Trading |	Helen Bennett |	(198) 555-8888 |	Cowes |	NULL|
-|Königlich Essen |	Philip Cramer |	0555-09876 |	Brandenburg |	NULL|
-|Let's Stop N Shop |	Jaime Yorres |	(415) 555-5938 |	San Francisco |	NULL|
-|Morgenstern Gesundkost |	Alexander Feuer |	0342-023176 |	Leipzig |	NULL|
-|Princesa Isabel Vinhos |	Isabel de Castro |	(1) 356-5634 |	Lisboa |	NULL|
-|Queen Cozinha |	Lúcia Carvalho |	(11) 555-1189 |	Sao Paulo |	NULL|
-|QUICK-Stop |	Horst Kloss |	0372-035188 |	Cunewalde |	NULL|
-|Ricardo Adocicados |	Janete Limeira |	(21) 555-3412 |	Rio de Janeiro |	NULL|
-|Richter Supermarkt |	Michael Holz |	0897-034214 |	Genève |	NULL|
-|Save-a-lot Markets |	Jose Pavarotti |	(208) 555-8097 |	Boise |	NULL|
-|The Big Cheese |	Liz Nixon |	(503) 555-3612 |	Portland |	NULL|
-|Tortuga Restaurante |	Miguel Angel Paolino |	(5) 555-2933 |	México D.F. |	NULL|
-|Wellington Importadora |	Paula Parente |	(14) 555-8122 |	Resende |	NULL|
+
+| CompanyName |	ContactName |	Phone	City	| Fax |
+| Antonio Moreno Taquería |	Antonio Moreno |	(5) 555-3932 |	México D.F. |	NULL |
+| B's Beverages |	Victoria Ashworth	| (171) 555-1212 |	London |	NULL |
+| Chop-suey Chinese |	Yang Wang |	0452-076545 |	Bern |	NULL |
+| Comércio Mineiro |	Pedro Afonso |	(11) 555-7647 |	Sao Paulo |	NULL |
+| Familia Arquibaldo |	Aria Cruz |	(11) 555-9857 |	Sao Paulo |	NULL |
+| Folk och fä HB |	Maria Larsson |	0695-34 67 21 |	Bräcke | NULL |
+| Godos Cocina Típica |	José Pedro Freyre |	(95) 555 82 82 |	Sevilla |	NULL |
+| Great Lakes Food Market |	Howard Snyder |	(503) 555-7555 |	Eugene |	NULL |
+| Island Trading |	Helen Bennett |	(198) 555-8888 |	Cowes |	NULL |
+| Königlich Essen |	Philip Cramer |	0555-09876 |	Brandenburg |	NULL |
+| Let's Stop N Shop |	Jaime Yorres |	(415) 555-5938 |	San Francisco |	NULL |
+| Morgenstern Gesundkost |	Alexander Feuer |	0342-023176 |	Leipzig |	NULL|
+| Princesa Isabel Vinhos |	Isabel de Castro |	(1) 356-5634 |	Lisboa |	NULL |
+| Queen Cozinha |	Lúcia Carvalho |	(11) 555-1189 |	Sao Paulo |	NULL |
+| QUICK-Stop |	Horst Kloss |	0372-035188 |	Cunewalde |	NULL|
+| Ricardo Adocicados |	Janete Limeira |	(21) 555-3412 |	Rio de Janeiro |	NULL |
+| Richter Supermarkt |	Michael Holz |	0897-034214 |	Genève |	NULL |
+| Save-a-lot Markets |	Jose Pavarotti |	(208) 555-8097 |	Boise |	NULL |
+| The Big Cheese |	Liz Nixon |	(503) 555-3612 |	Portland |	NULL |
+| Tortuga Restaurante |	Miguel Angel Paolino |	(5) 555-2933 |	México D.F. |	NULL |
+| Wellington Importadora |	Paula Parente |	(14) 555-8122 |	Resende |	NULL |
 
 ### Q6 - Ahh there you are! My prize :star::star:SPARTANTS:star::star:! MY MARES AND MY STALLIONS! We need to re-target all of our Customers is Paris! Get me information on these clients.
 
