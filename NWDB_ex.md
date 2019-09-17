@@ -73,18 +73,38 @@ Response:
 
 ### Q6 - Ahh there you are! My prize :star::star:SPARTANTS:star::star:! MY MARES AND MY STALLIONS! We need to re-target all of our Customers is Paris! Get me information on these clients.
 
-Query:
+Query: SELECT * FROM Customers
+WHERE City = 'Paris'
 
 Response:
+
+| CustomerID | CompanyName          | ContactName       | ContactTitle      | Address                 | City  | Region | PostalCode | Country | Phone           | Fax             |
+|------------|----------------------|-------------------|-------------------|-------------------------|-------|--------|------------|---------|-----------------|-----------------|
+| PARIS      | Paris spécialités    | Marie Bertrand    | Owner             | 265, boulevard Charonne | Paris | NULL   | 75012      | France  | (1) 42.34.22.66 | (1) 42.34.22.77 |
+| SPECD      | Spécialités du monde | Dominique Perrier | Marketing Manager | 25, rue Lauriston       | Paris | NULL   | 75016      | France  | (1) 47.55.60.10 | (1) 47.55.60.20 |
 
 ### Q7 - WAIT! Where are you going? (...) These clients are hard to sell too! We need more intel.. Can you find out, from these clients from Paris, whom orders the most by quantity? Who are our top 5 clients?  
 
-Query:
+Query: SELECT * FROM Orders
+WHERE ShipCity = 'Paris'
 
-Response:
+SELECT * FROM Customers
+WHERE City = 'Paris'
+
+SELECT DISTINCT TOP 5 CustomerID FROM Orders
+
+Response: Spécialités du monde orders the most from Paris (orderID = SPECD)
+Top 5 clients are:
+
+| CustomerID |
+|------------|
+| ALFKI      |
+| ANATR      |
+| ANTON      |
+| AROUT      |
+| BERGS      |
 
 ### Q8 - OMG What are you? Some kind of SQL Guardian Angel? THIS IS AMAZING! May God pay you handsomely :smile_cat: because I have no cash on me!..  I do have one more request. I need to know more about these these Paris client. Can you find out which ones their deliveries took longer than 10 days? Display the Business/client name, contact name, all their contact details (don't forget the fax!), as well as the number of deliveries that where overdue! Just add a column named: 'Number overdue orders'! simple, thank you!
 
 Query:
-
 Response:
