@@ -74,7 +74,7 @@ Response:
 ### Q6 - Ahh there you are! My prize :star::star:SPARTANTS:star::star:! MY MARES AND MY STALLIONS! We need to re-target all of our Customers is Paris! Get me information on these clients.
 
 Query: SELECT * FROM Customers
-WHERE City = 'Paris'
+        WHERE City = 'Paris'
 
 Response:
 
@@ -86,12 +86,12 @@ Response:
 ### Q7 - WAIT! Where are you going? (...) These clients are hard to sell too! We need more intel.. Can you find out, from these clients from Paris, whom orders the most by quantity? Who are our top 5 clients?  
 
 Query: SELECT * FROM Orders
-WHERE ShipCity = 'Paris'
+        WHERE ShipCity = 'Paris'
 
-SELECT * FROM Customers
-WHERE City = 'Paris'
+       SELECT * FROM Customers
+        WHERE City = 'Paris'
 
-SELECT DISTINCT TOP 5 CustomerID FROM Orders
+       SELECT DISTINCT TOP 5 CustomerID FROM Orders
 
 Response: Spécialités du monde orders the most from Paris (orderID = SPECD)
 Top 5 clients are:
@@ -106,5 +106,7 @@ Top 5 clients are:
 
 ### Q8 - OMG What are you? Some kind of SQL Guardian Angel? THIS IS AMAZING! May God pay you handsomely :smile_cat: because I have no cash on me!..  I do have one more request. I need to know more about these these Paris client. Can you find out which ones their deliveries took longer than 10 days? Display the Business/client name, contact name, all their contact details (don't forget the fax!), as well as the number of deliveries that where overdue! Just add a column named: 'Number overdue orders'! simple, thank you!
 
-Query:
-Response:
+Query: SELECT * FROM Orders
+        WHERE ShippedDate - OrderDate > 10 AND ShipCity = 'Paris'
+
+Response: There are no orders from paris that took longer than 10 days (?)
