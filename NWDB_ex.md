@@ -92,9 +92,11 @@ Query: SELECT * FROM Orders
        SELECT * FROM Customers
         WHERE City = 'Paris'
 
-       SELECT DISTINCT TOP 5 CustomerID FROM Orders
+        SELECT SUM(Quantity) FROM [Order Details]
+          WHERE OrderID = 10738 OR OrderID = 10907 OR OrderID = 10964 OR OrderID = 11043
 
-Response: Spécialités du monde orders the most from Paris (orderID = SPECD)
+
+Response: Spécialités du monde orders the most from Paris (orderID = SPECD) with
 Top 5 clients are:
 
 | CustomerID |
