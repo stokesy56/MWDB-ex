@@ -91,6 +91,7 @@ Response:
 ### Q7 - WAIT! Where are you going? (...) These clients are hard to sell too! We need more intel.. Can you find out, from these clients from Paris, whom orders the most by quantity? Who are our top 5 clients?  
 
 Query:
+
 SELECT TOP 5 Customers.ContactName, Customers.CustomerID, SUM(Quantity) AS 'Sum Quantity'
 FROM Orders
 JOIN [Order Details]
