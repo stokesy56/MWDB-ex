@@ -103,15 +103,6 @@ Query:
 
 Response: Spécialités du monde orders the most from Paris (orderID = SPECD) with quantity being 48
 
-Top 5 clients are:
-
-| CustomerID |
-|------------|
-| ALFKI      |
-| ANATR      |
-| ANTON      |
-| AROUT      |
-| BERGS      |
 
 ### Q8 - OMG What are you? Some kind of SQL Guardian Angel? THIS IS AMAZING! May God pay you handsomely :smile_cat: because I have no cash on me!..  I do have one more request. I need to know more about these these Paris client. Can you find out which ones their deliveries took longer than 10 days? Display the Business/client name, contact name, all their contact details (don't forget the fax!), as well as the number of deliveries that where overdue! Just add a column named: 'Number overdue orders'! simple, thank you!
 
