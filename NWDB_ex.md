@@ -102,6 +102,7 @@ Query:
 
 
 Response: Spécialités du monde orders the most from Paris (orderID = SPECD) with quantity being 48
+
 Top 5 clients are:
 
 | CustomerID |
