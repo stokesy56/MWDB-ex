@@ -91,18 +91,22 @@ Response:
 ### Q7 - WAIT! Where are you going? (...) These clients are hard to sell too! We need more intel.. Can you find out, from these clients from Paris, whom orders the most by quantity? Who are our top 5 clients?  
 
 Query:
-      SELECT * FROM Orders
-        WHERE ShipCity = 'Paris'
+SELECT TOP 5 Customers.ContactName, Customers.CustomerID, SUM(Quantity) AS 'Sum Quantity'
+FROM Orders
+JOIN [Order Details]
+ON Orders.OrderID = [Order Details].OrderID
+JOIN Customers
+ON Customers.CustomerID=Orders.CustomerID
+WHERE City = 'London'
+GROUP BY Customers.CustomerID,  Customers.ContactName
+Order BY 'Sum Quantity' DESC
 
-       SELECT * FROM Customers
-        WHERE City = 'Paris'
 
-        SELECT SUM(Quantity) FROM [Order Details]
-          WHERE OrderID = 10738 OR OrderID = 10907 OR OrderID = 10964 OR OrderID = 11043
+Response:
 
-
-Response: Spécialités du monde orders the most from Paris (orderID = SPECD) with quantity being 48
-
+| ContactName       | CustomerID | Sum Quantity |
+|-------------------|------------|--------------|
+| Dominique Perrier | SPECD      | 48           |
 
 ### Q8 - OMG What are you? Some kind of SQL Guardian Angel? THIS IS AMAZING! May God pay you handsomely :smile_cat: because I have no cash on me!..  I do have one more request. I need to know more about these these Paris client. Can you find out which ones their deliveries took longer than 10 days? Display the Business/client name, contact name, all their contact details (don't forget the fax!), as well as the number of deliveries that where overdue! Just add a column named: 'Number overdue orders'! simple, thank you!
 
